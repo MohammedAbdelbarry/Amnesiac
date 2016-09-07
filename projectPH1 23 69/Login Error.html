@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amnesiac: Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
+</head>
+<body style="background-color: #f2f2f2;" >
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Amnesiac</a>
+        </div>
+    </div>
+</nav>
+<div align="center">
+    <div class="well bs-component"style="width:500px; margin:0 auto;">
+        <form class="form-horizontal" action="/login" method="post">
+            <fieldset>
+                <legend>Sign in</legend>
+                <div class="form-group"style="width: 350px; margin: 0 auto">
+                    <div class="col-lg-8"style="width: 350px; margin: 0 auto">
+                        <input class="form-control" id="inputEmail" placeholder="Enter Your Email" type="text" name="email">
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group" style="width: 350px; margin: 0 auto">
+                    <div class="col-lg-8" style="width: 350px; margin: 0 auto">
+                        <input class="form-control" id="inputPassword" placeholder="Enter Your Password" type="password" name="password">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+                <div class="form-group">
+                    <a href="/signup">Don't have an account? Sign Up</a>
+                </div>
+
+            </fieldset>
+        </form>
+        <div class="alert alert-dismissible alert-danger" style="display: block; border-color: #E95420; background-color: #FDEEE9"  >
+            <p id="alertMessage" style="color: black">The E-mail and password you entered did not match our records. Please double-check and try again.</p>
+        </div>
+    </div>
+</div>
+<script>
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validateName(name) {
+        var re = /^[a-zA-Z ]{5,30}$/;
+        return re.test(name);
+    }
+</script>
+</body>
+</html>

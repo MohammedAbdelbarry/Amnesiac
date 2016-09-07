@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amnesiac: Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
+</head>
+<body style="background-color: #f2f2f2">
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    				<span class="sr-only">Toggle navigation</span>
+		       		<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+	  			</button>
+      			<a class="navbar-brand" href="#">Amnesiac</a>
+    		</div>
+    	</div>
+    </nav>
+    <div align="center">
+    	<div class="well bs-component" style="width:500px; margin:0 auto;">
+    		<form class="form-horizontal" action="/register" method="post">
+	    		<fieldset>
+	    		<legend>Sign Up</legend>
+	    		<div class="form-group" style="width: 350px; margin: 0 auto">
+            <div class="col-lg-8" style="width: 350px; margin: 0 auto">
+              <input class="form-control" id="inputName" placeholder="Enter Your Name" type="text" name="name">
+            </div>
+          </div>
+                    <br>
+          <div class="form-group" style="width: 350px; margin: 0 auto">
+	    			<div class="col-lg-8" style="width: 350px; margin: 0 auto">
+	    				<input class="form-control" id="inputEmail" name="email" placeholder="Enter Your Email" type="text">
+    				</div>
+				  </div>
+                    <br>
+          <div class="form-group" style="width: 350px; margin: 0 auto">
+            <div class="col-lg-8" style="width: 350px; margin: 0 auto">
+              <input class="form-control" id="inputPassword" name="password" placeholder="Enter Your Password" type="password">
+            </div>
+          </div>
+                    <br>
+				<div class="form-group" style="width: 350px; margin: 0 auto">
+	    			<div class="col-lg-8" style="width: 350px; margin: 0 auto">
+	    				<input class="form-control" id="inputPasswordConfirm" name="pwConfirmation" placeholder="Confirm Your Password" type="password">
+    				</div>
+				</div>
+                    <br>
+				<div class="form-group">
+    				<button type="submit" class="btn btn-primary">Sign Up</button>
+  			</div>	
+	    	</fieldset>
+    	</form>
+    	</div>
+    </div>
+</body>
+</html>
